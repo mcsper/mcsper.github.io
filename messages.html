@@ -1,0 +1,196 @@
+<html>
+<head>
+<link rel="stylesheet" href="w3.css" type="text/css">
+</head>
+
+
+<body>
+<!--HEADER-->
+<!-- TEST
+<header class="w3-top">
+<ul class="w3-navbar w3-blue-grey   w3-large">
+    <li class="w3-navitem">BRUH</li>
+  </ul>
+</header>
+-->
+
+<header class="w3-top">
+    <div class="w3-topnav w3-blue-grey">
+        <div>home</div>
+        <a href="#">ONE</a>
+        <a href="#">TWO</a>
+        <a href="#">THREE</a>
+        <a href="#">FOUR</a>
+    </div>
+</header>
+
+<br>
+<br>
+<!--END HEADER-->
+
+
+
+
+
+<!--CONTENT/MESSAGES-->
+<div class="">
+
+<!--msg 1 RIGHT-->
+<div class="w3-row w3-margin ">
+<section class="w3-quarter ">
+    <p>
+    <!--EMPTY-->
+    </p>
+</section>
+<section class="w3-container w3-threequarter w3-round-large w3-blue w3-text-white">
+    <p>
+    Hi,
+    I recently used the Pi all-in-one installer (ssh from mac) and it seemed to work. I have the configuration.yaml file, but I'm not sure how to get to the browser dashboard. I put in my internal and external IP address with :8123, but it just thinks for a while and hangs, both from the same network and from a different network (or cellular).
+    Do I need to port forward or anything? How do I know I'm using the right IP?</p><p>
+    I put HA on a RPI 1B. I will try a full reinstall of rasbian and HA if I have to but it took a long time so I'm trying to avoid it.
+    </p><p>
+    Thanks
+    </p><p>
+    any help would be great
+    </p>
+</section>
+</div>
+
+<!--msg 2 LEFT-->
+<div class="w3-row w3-margin ">
+<section class="w3-container  w3-threequarter w3-round-large w3-light-grey">
+    <p>
+    Sweet! That's a good sign if you can see the config. Do you have anything in your log in the same directory? My guess is that you will. 
+    </p><p>
+    To access the HA frontend it should be as easy as accessing your Pi's internal IP address at port 8123. So something like 192.168.0.100:8123
+    </p><p>
+    You need to make sure both devices are on the same network. So, if your Pi is connected to a wired port a wireless router, your PC should be too. Typically, you can't access HA on the "backside" of a switch or router without some kind of port forwarding configuration.
+    </p><p>
+    My guess is if you can SSH into the Pi, you should be able to access HA on the same IP address from that device.  If it's not the network then HA might be crashing on boot. Check the log to see if there is an error statement. A reinstall might fix it, too. 
+    </p><p>
+    The first time you fire up HA, it can take like 45+ minutes for it to initiate the frontend. It has to download a lot of dependencies... especially on a Pi1. 
+    </p><p>
+    If you get it up and running, I'd definitely recommend switching to a Pi3. It's way way faster and will definitely improve your loading times and such. Not to mention, you can never have enough Pis.  
+    </p><p>
+    Let me know if that doesn't help. I can try and think of some more things, as well. Good luck! Cheers!
+    </p>
+</section>
+<section class="w3-quarter ">
+    <p>
+    <!--EMPTY-->
+    </p>
+</section>
+</div>
+
+<!--msg 3 RIGHT-->
+<div class="w3-row w3-margin">
+  <div class="w3-col w3-container" style="width:15%"><p></p></div>
+  <div class="w3-rest w3-container w3-round-large w3-blue w3-text-white">
+  <p>
+    Hi,
+    I recently used the Pi all-in-one installer (ssh from mac) and it seemed to work. I have the configuration.yaml file, but I'm not sure how to get to the browser dashboard. I put in my internal and external IP address with :8123, but it just thinks for a while and hangs, both from the same network and from a different network (or cellular).
+    Do I need to port forward or anything? How do I know I'm using the right IP?</p><p>
+    I put HA on a RPI 1B. I will try a full reinstall of rasbian and HA if I have to but it took a long time so I'm trying to avoid it.
+    </p><p>
+    Thanks
+    </p><p>
+    any help would be great
+    </p>
+  </div>
+</div>
+
+<!--msg 4 LEFT-->
+<div class="w3-row w3-margin">
+  <div class="w3-rest w3-container w3-round-large w3-light-grey" style="width:85%">
+  <div class="w3-col w3-container" ><p></p></div>
+  <p>
+    /admin
+</p><p>
+Phase Fist: /spawnitem npcshotgun 1 '{"shortdescription":"Phase Fist","level":6,"seed":491,"animationCustom":{"sounds":{"fire":["/sfx/projectiles/blast_small1.ogg"]}},"primaryAbility":{"projectileType":"energyfist","baseDps":4,"inaccuracy":0,"projectileParameters":{"speed":70,"power":15.5,"knockback":10}}}'
+</p><p>
+Vulcan Launcher: /spawnitem raregrenadelauncher 1 '{"shortdescription":"Vulcan Orb Launcher","level":6,"seed":19,"animationCustom":{"sounds":{"fire":["/sfx/projectiles/astraltear_stop2.ogg"]}},"primaryAbility":{"projectileType":"orbofzots","baseDps":2,"inaccuracy":0,"projectileParameters":{"speed":60,"power":17.5,"knockback":10}}}'
+</p><p>
+Flare Gun: /spawnitem rarepistol 1 '{"shortdescription":"Flare Gun","level":6,"seed":449,"animationCustom":{"sounds":{"fire":["/sfx/projectiles/throw_item_small.ogg"]}},"primaryAbility":{"fireTime":1.5,"projectileType":"flare","baseDps":0,"inaccuracy":0,"projectileParameters":{"speed":60,"power":17.5,"knockback":10}}}'
+</p><p>
+Support Staff: /spawnitem rarestaff 1 '{"shortdescription":"Shaman Staff","description":"Heal and Energize","rarity":"Legendary","level":6,"elementalType":"ice","primaryAbilityType":"healingzone","altAbilityType":"energyzone"}'
+</p><p>
+Stealth Armor: /spawnitem perfectchest 1 '{"shortdescription":"Stealth Armor","description":"Stealth Gear","statusEffects":["camouflage25"],"directives":"?replace;ffca8a=20d20b;e0975c=1b9b0c;a85636=127406;6f2919=244326;ffffa7=ff586e;e2c344=a32c1c;5b6364=1b9b0c;3a3f42=127406;181c1d=244326;9da8af=58596f;676f83=2f3344;3d3d51=24232f;99919e=58596f;6a6d7c=2f3344;474b56=24232f;585c60=1b9b0c"}'
+    </p>
+  </div>
+</div>
+
+</div>
+<!--END CONTENT/MESSAGES-->
+
+
+
+
+
+<!--IMAGE GALLERY-->
+<div class="w3-row">
+  <div class="w3-col s3 w3-container">
+  <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Nature');">
+    <img src="http://www.w3schools.com/w3css/img_nature.jpg" alt="Nature" style="width:100%">
+  </a>
+  </div>
+  <div class="w3-col s3 w3-container">
+    <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Fjords');">
+      <img src="http://www.w3schools.com/w3css/img_fjords.jpg" alt="Fjords" style="width:100%">
+    </a>
+  </div>
+  <div class="w3-col s3 w3-container">
+    <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Mountains');">
+      <img src="http://www.w3schools.com/w3css/img_mountains.jpg" alt="Mountains" style="width:100%">
+    </a>
+  </div>
+  <div class="w3-col s3 w3-container">
+    <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Lights');">
+      <img src="http://www.w3schools.com/w3css/img_lights.jpg" alt="Lights" style="width:100%">
+    </a>
+  </div>
+</div><br>
+
+<div class="w3-row w3-margin ">
+<div id="Nature" class="picture w3-display-container">
+  <img src="http://www.w3schools.com/w3css/img_nature_wide.jpg" alt="Nature" style="width:100%">
+  <span onclick="this.parentElement.style.display='none'" 
+  class="w3-display-topright w3-closebtn w3-padding-large w3-text-white">&times;</span>
+  <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Nature</div>
+</div>
+
+<div id="Fjords" class="picture w3-display-container">
+  <img src="http://www.w3schools.com/w3css/img_fjords_wide.jpg" alt="Fjords" style="width:100%">
+  <span onclick="this.parentElement.style.display='none'" 
+  class="w3-display-topright w3-closebtn w3-padding-large w3-text-white">&times;</span>
+  <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Fjords</div>
+</div>
+
+<div id="Mountains" class="picture w3-display-container">
+  <img src="http://www.w3schools.com/w3css/img_mountains_wide.jpg" alt="Mountains" style="width:100%">
+  <span onclick="this.parentElement.style.display='none'" 
+  class="w3-display-topright w3-closebtn w3-padding-large w3-text-white">&times;</span>
+  <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Mountains</div>
+</div>
+
+<div id="Lights" class="picture w3-display-container">
+  <img src="http://www.w3schools.com/w3css/img_lights_wide.jpg" alt="Lights" style="width:100%">
+  <span onclick="this.parentElement.style.display='none'" 
+  class="w3-display-topright w3-closebtn w3-padding-large w3-text-white">&times;</span>
+  <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Northern Lights</div>
+</div>
+</div>
+
+<script>
+function openImg(imgName) {
+  var i, x;
+  x = document.getElementsByClassName("picture");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  document.getElementById(imgName).style.display = "block";
+}
+</script>
+<!--END IMAGE GALLERY-->
+
+
+</body>
